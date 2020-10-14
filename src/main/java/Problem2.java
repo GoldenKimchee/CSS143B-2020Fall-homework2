@@ -1,12 +1,21 @@
 public class Problem2 {
 
     /*
-    Describe your algorithm here in up to 5 sentences:
+    This takes a sorted integer array as a parameter. It will have the first items of the list to be
+    unique numbers that are sorted. The rest of the numbers after will be content that is ignored by
+    the tests. It will return the length of the sorted array (amount of unique numbers).
      */
 
-    // Do not change signature (function name, parameters and return type)
-    // Do not use extra space for another array. Solution to be in-pace with O(1) extra memory
     public static int remove(int[] nums) {
-        return Integer.MAX_VALUE; // place holder
+        int compare = nums[0];
+        int length = 1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != compare) {
+                nums[length] = nums[i];
+                compare = nums[i];
+                length++;
+            }
+        }
+        return length;
     }
 }

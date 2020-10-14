@@ -6,5 +6,6 @@ public class Problem1 {
 
     // Do not change signature (function name, parameters type, and return type)
     public static void colorSort(int[] nums) {
+
     }
 }
