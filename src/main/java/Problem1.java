@@ -1,7 +1,8 @@
 public class Problem1 {
 
     /*
-    Describe your algorithm here in up to 5 sentences:
+    This sorts three numbers that represent different colors. It has three pointers for the start, middle, and end.
+    These pointers are used to format the numbers to the right position. Also, it takes one pass only!
      */
 
     // Do not change signature (function name, parameters type, and return type)
