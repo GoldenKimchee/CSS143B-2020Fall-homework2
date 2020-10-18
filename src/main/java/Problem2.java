@@ -7,17 +7,18 @@ public class Problem2 {
      */
 
     public static int remove(int[] nums) {
-        if (nums == null || nums.length == 0) {
+        if (nums == null || nums.length == 0) { // added in case null or empty list is inputed
             return 0;
         }
-
+        // this only works since it is a sorted array!
         int compare = nums[0];
-        int length = 1;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != compare) {
-                nums[length] = nums[i];
-                compare = nums[i];
-                length++;
+        int length = 1;                         // keeps track where to put the next unique number
+
+        for (int i = 0; i < nums.length; i++) { // goes through the whole list
+            if (nums[i] != compare) {           // if the next number is unique
+                nums[length] = nums[i];         // unique number set to spot next to the other unique numbers
+                compare = nums[i];              // resets what number to compare with
+                length++;                       // resets where to put next unique number
             }
         }
         return length;

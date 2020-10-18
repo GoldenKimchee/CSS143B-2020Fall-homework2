@@ -1,9 +1,7 @@
 package Problem3;
 
 public class BookFiction extends Book {
-
     private int lateFeePerDayInDollar = 2;
-
     private String genres;
 
     public BookFiction(String title, String author, String genres) {

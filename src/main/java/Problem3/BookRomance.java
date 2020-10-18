@@ -1,7 +1,6 @@
 package Problem3;
 
 public class BookRomance extends Book {
-
     private int lateFeePerDayInDollar = 4;
 
     public BookRomance(String title, String author) {

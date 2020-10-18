@@ -7,6 +7,8 @@ public class Problem1Test {
     @Test
     public void testSortColor() {
         int[][] inputs = {
+                null, // This addition of null and
+                {},   //an empty list test case has been approved on discord
                 {0, 1, 2},
                 {2, 1, 0},
                 {0, 1, 2},
@@ -19,6 +21,8 @@ public class Problem1Test {
         };
 
         int[][] expects = {
+                null,   // Expect cases were
+                {},     //approved by professor
                 {0, 1, 2},
                 {0, 1, 2},
                 {0, 1, 2},

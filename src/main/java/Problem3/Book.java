@@ -22,8 +22,8 @@ public abstract class Book implements StoreMediaOperations {
 
     @Override
     public boolean equals(Object obj) {
-        Book anotherBook = (Book) obj;
-        if (anotherBook.id == this.id) {
+        Book otherBook = (Book) obj;
+        if (otherBook.id == this.id) {
             return true;
         }
         return false;

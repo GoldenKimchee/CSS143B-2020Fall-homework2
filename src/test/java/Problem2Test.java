@@ -7,6 +7,8 @@ public class Problem2Test {
     public void testRemoveDuplicates() {
         int[][] inputs = {
                 // DO NOT REMOVE OR CHANGE THE GIVEN TEST CASES!
+                null, // This addition of null and
+                {},   //an empty list test case has been approved on discord
                 {0, 0, 1, 1, 1, 2, 2, 4, 4, 6},
                 {1, 2, 4, 5, 5, 8, 9, 10, 10},
                 {5, 7, 7, 7, 9, 9, 10, 11, 12, 12},
@@ -17,6 +19,8 @@ public class Problem2Test {
         };
 
         int[][] expects = {
+                {},  // Expect cases were
+                {},  //approved by professor
                 {0, 1, 2, 4, 6},
                 {1, 2, 4, 5, 8, 9, 10},
                 {5, 7, 9, 10, 11, 12},

@@ -1,7 +1,6 @@
 package Problem3;
 
 public class MovieAction extends Movie {
-
     private int lateFeePerDayInDollar = 5;
 
     public MovieAction(String rating, String title) {
